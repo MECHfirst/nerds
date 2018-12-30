@@ -1,7 +1,11 @@
 *{
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+}
 body{
+    margin:0;
     width:100%;
     height:100%;
     background-color: #ffffff;
@@ -34,9 +38,10 @@ ul li{
     content:"";
 }
 .header__logo{
-    float:left;
     width:140px;
     height:60px;
+    float:left;
+    padding-bottom: 75px;
 }
 .header__menu-list{
     display: inline-block;
@@ -71,4 +76,35 @@ ul li{
 }
 .header__menu-link-text:active{
     color:#ababab;
+}
+.header__menu-link-text:visited{
+text-decoration: solid red;
+}
+
+.header__knowmore{
+    float:left;
+    width:365px;
+}
+.header__knowmore-title{
+    font-weight: bolder;
+    font-size:30px;
+    padding-bottom:20px;
+}
+.header__knowmore-info{
+    color:#283136;
+    font-size:15px;
+}
+.header__knowmore-link{
+    display: block;
+    margin-top:20px;
+    padding:14px 70px;
+    background-color:#fb565a;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.header__slideshow{
+    float:right;
+    margin-top:-20px;
 }
